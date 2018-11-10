@@ -40,16 +40,12 @@ class Home extends Component {
   signup =  () => {
     console.log(this.state)
     const payload = {
-      profile: {
         firstName: this.state.firstname,
         lastName: this.state.lastname,
-      },
-      address: {
         province: this.state.province,
         city:this.state.city,
         barangay: this.state.barangay,
         street: this.state.street || '',
-      }
     }
     this.props.services.postCustomerRegisterEpic(payload)
   }

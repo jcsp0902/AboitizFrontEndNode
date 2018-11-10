@@ -1,1 +1,1 @@
-export const signup = "signup";
+export const signup = "register";

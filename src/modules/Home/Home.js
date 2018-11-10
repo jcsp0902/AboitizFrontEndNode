@@ -32,6 +32,7 @@ class Home extends Component {
 
     return (
       <section className="home-section">
+      <div className="title-home">Applications</div>
         {this.state.dataSource.map(data => 
           <PackageCard dataSource={data} onSave={this.handleSave} onCancel={this.handleCancel} />
         )}

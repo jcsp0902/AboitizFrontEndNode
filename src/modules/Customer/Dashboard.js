@@ -13,7 +13,7 @@ class Test extends Component {
       <Layout>
         <Layout>
           <Sider>
-            <Button> Apply New Service </Button>
+            <Button className="btn-default"> Apply New Service </Button>
             <div className="user-section">
               <div className="user-info">
               <img src="https://i.redd.it/brxxveprs2e01.png" alt="Italian Trulli"/>
@@ -33,6 +33,11 @@ class Test extends Component {
           <Content>
             <h1>Electrician Service Application</h1>
             <CustomerCard />
+            <div className="_spacer"/>
+            <CustomerCard />
+            <div className="_spacer"/>
+            <CustomerCard />
+            <div className="_spacer"/>
           </Content>
         </Layout>
       </Layout>

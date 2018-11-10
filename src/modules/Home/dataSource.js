@@ -57,7 +57,7 @@ export const packages = [
     id: 4,
     packageName: '4',
     status: "Pending",
-    location: "3008 Lapidsville II Blk 5 Lot 8 Tambuong, San Rafael, Bulacan",
+    location: "3008 Lapidsville Tambuong, Pampanga, Bulacan",
     packagePrice: 10000,
     service: "Installation",
     type: "All In",
@@ -88,7 +88,7 @@ export const dataSource = [
     applicationId: 1,
     packageName: '1',
     status: "Pending",
-    location: "3008 Lapidsville II Blk 5 Lot 8 Tambuong, San Rafael, Bulacan",
+    location: "Blk 10 Lot 18 Taas, Pulilan, Bulacan",
     packagePrice: 10000,
     service: "Installation",
     type: "All In",
@@ -132,22 +132,6 @@ export const dataSource = [
       "4 Wirings",
       "2 Light walls",
       "10 Lamps",
-    ]
-  },
-  {
-    id: 1,
-    packageName: '1',
-    status: "Pending",
-    location: "3008 Lito Lapidsville II Blk 5 Lot 8 bubong, San Rafael, Bulacan",
-    packagePrice: 10000,
-    applicationId: 4,
-    service: "Installation",
-    type: "All In",
-    details:[
-      "2 Lights",
-      "5 Outlet",
-      "4 Wirings",
-      "2 Light walls",
     ]
   },
 ]

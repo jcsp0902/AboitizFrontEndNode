@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import isEqual from 'lodash/isEqual'
+import Button from 'antd/lib/button';
 
 const propTypes = {
-  dataSource: PropTypes.shape({
-    location: PropTypes.string,
+  handleSave: PropTypes.func,
+  handleCancel: PropTypes.func,
+}
 
-  }),
+const defaultProps = {
+  handleSave: () => {},
+  handleCancel: () => {},
 }
 
 
 class PackageCard extends Component {
   state = {
-    mode: 0,
+    status: 0,
     dataSource: {
+      id: "",
       location: "",
       status: "",
       packegPrice: 0,
@@ -43,6 +49,32 @@ class PackageCard extends Component {
     }))
   }
 
+  handleCancel = () => {
+    const id = this.state.dataSource.applicationId;
+    this.props.onCancel(id);
+  }
+
+  handleSave = () => {
+    const id = this.state.dataSource.applicationId;
+    this.setState({
+      status: 0,
+    })
+    this.props.onSave(id);
+  }
+
+  handleEdit = () => {
+    this.setState({
+      status: 1,
+    })
+    this.props.history.push("/service-application")
+  }
+
+  handleCancelSave = () => {
+    this.setState({
+      status: 0,
+    })
+  }
+
   render() {
     const {
       handleEdit,
@@ -51,10 +83,11 @@ class PackageCard extends Component {
     } = this.props;
     const {
       dataSource,
-      mode,
+      status,
       isViewMore,
       numToShow,
-    } = this.state
+    } = this.state;
+    
     const detailsSlice = dataSource.details.slice(0, numToShow);
     const detailsRender = detailsSlice.map(item => {
       return <div className="item">{item}</div>
@@ -72,6 +105,11 @@ class PackageCard extends Component {
           <span className="title">Location:</span> {dataSource.location}
         </div>
         
+        <div className="name">
+          <span className="title">Package Name: </span>
+          {dataSource.packageName}
+        </div>
+
         <div className="price">
         <span className="title">
           Package Price: {' '} 
@@ -98,39 +136,58 @@ class PackageCard extends Component {
           <div className="items">
             {detailsRender}
           </div>
+          {dataSource.details.length > 4 &&
           <button
             className="view-more-action"
             onClick={this.handleViewMore}
           >
             View {isViewMore ? 'Less' : 'More'}
           </button>
+          }
         </div>
       </div>
       </div>
       <div className="package-footer">
       {
-        mode === 0 ?
+        status === 0 ?
         <div className="action-body">
-          <button
-            className="action"
+          <span className="action">
+            <Button
+            type="primary"
+            className="action-edit"
             onClick={this.handleEdit}
-          >
-            Edit Details
-          </button>
-          <button
-            className="action"
-          >
+            >
+              Edit Details
+            </Button>
+          </span>
+          <span className="action">
+            <Button
+              className="action-cancel"
+              onClick={this.handleCancel}
+            >
             Cancel Application
-          </button>
+            </Button>
+          </span>
         </div> 
         :
         <div className="action-body">
-          <button
-            className="action"
+        <span className="action">
+          <Button
+            type="primary"
+            className="action-save"
             onClick={this.handleSave}
           >
             Save Details
-          </button>
+          </Button>
+        </span>
+        <span className="action">
+          <Button
+              className="action-cancel"
+              onClick={this.handleCancelSave}
+            >
+            Cancel
+          </Button>
+        </span>
         </div>
         }
         </div> 
@@ -139,4 +196,7 @@ class PackageCard extends Component {
   }
 }
 
-export default PackageCard;
+PackageCard.propTypes = propTypes;
+PackageCard.defaultProps = defaultProps;
+
+export default withRouter(PackageCard);

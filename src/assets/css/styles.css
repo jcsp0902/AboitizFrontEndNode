@@ -12,6 +12,10 @@
   height: 35px;
   font-size: 20px;
   padding-left: 20px; }
+  .Header-section .anticon-notification {
+    color: black; }
+  .Header-section .apply-button {
+    padding-left: 100px; }
   .Header-section .ant-btn {
     border: none;
     font-weight: 700;
@@ -97,6 +101,12 @@
   .login-section .ant-input,
   .login-section .ant-radio-group {
     margin-bottom: 30px; }
+
+.home-section {
+  text-align: center; }
+  .home-section .title-home {
+    font-size: 24px;
+    font-weight: bolder; }
 
 .dashboard-section .ant-layout {
   height: 100vh;
@@ -376,18 +386,31 @@
     text-align: right; }
 
 .package-card {
+  text-align: left;
   overflow: auto;
   display: inline-block;
   margin: 10px;
-  border: 1px solid #857373;
+  border: 2px solid #857373;
   border-radius: 10px;
   max-width: 300px;
   min-height: 300px;
   box-shadow: 2px 2px #B9A7A7; }
   .package-card .package-header {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px; }
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px; }
     .package-card .package-header .pending {
+      border-radius: inherit;
+      background-color: #9e9588;
+      border-bottom: 1px solid #857373;
+      text-align: right;
+      color: #fff; }
+    .package-card .package-header .cancelled {
+      border-radius: inherit;
+      background-color: #9e9588;
+      border-bottom: 1px solid #857373;
+      text-align: right;
+      color: #fff; }
+    .package-card .package-header .approve {
       border-radius: inherit;
       background-color: #ff9400;
       border-bottom: 1px solid #857373;
@@ -411,3 +434,17 @@
   .package-body .details .items {
     max-height: 84px;
     overflow: auto; }
+  .package-body .details .view-more-action {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: #1890ff; }
+    .package-body .details .view-more-action:hover {
+      color: #326390; }
+
+.package-footer .action-body {
+  margin: 10px; }
+  .package-footer .action-body .action {
+    margin-right: 5px; }

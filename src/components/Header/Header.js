@@ -9,9 +9,13 @@ class Header extends Component {
       <section className="Header-section">
         <h1> Aboitiz </h1>
         {/* <Input placeholder="Keyword" className="search"/> */}
-        <Button icon="home"> HOME </Button>
+        <Link to='/home'>
+          <Button icon="home">
+            HOME
+          </Button>
+        </Link>
         <Link to={`/service-application`} >
-          <Button icon="form" className="services"> APPLY SERVICES</Button>
+          APPLY SERVICES
         </Link>
         <div className="right-panel">
           <Link to={`/customer-dashboard`} >

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Layout from 'antd/lib/layout';
 import { Tabs } from 'antd';
 
 const TabPane = Tabs.TabPane;
@@ -11,7 +10,9 @@ class Test extends Component {
     return (
       <section className="application-section">
         <Tabs defaultActiveKey="1">
-            <TabPane tab="ALL IN" key="1">Content of Tab Pane 1</TabPane>
+            <TabPane tab="ALL IN" key="1">
+              
+            </TabPane>
             <TabPane tab="REPAIR" key="2">Content of Tab Pane 2</TabPane>
         </Tabs>
       </section>

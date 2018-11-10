@@ -42,6 +42,7 @@ class Home extends Component {
     const payload = {
         firstName: this.state.firstname,
         lastName: this.state.lastname,
+        username: this.state.email,
         province: this.state.province,
         city:this.state.city,
         barangay: this.state.barangay,

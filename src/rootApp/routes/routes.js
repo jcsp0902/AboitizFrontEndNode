@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Home from "Modules/Login/Login";
 import Test from "Modules/Customer/Dashboard";
+import CreateService from 'Modules/CreateService/CreateService'
 
 class Routes extends Component {
   render() {
@@ -10,6 +11,8 @@ class Routes extends Component {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/customer-dashboard" component={Test} exact />
+        <Route path="/service-application" component={CreateService} exact />
+
       </Switch>
     );
   }

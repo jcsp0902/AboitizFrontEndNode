@@ -3,15 +3,31 @@
 */
 .content-section {
   min-height: calc(100vh - 130px);
-  padding: 20px; }
+  padding: 20px 5%; }
 
 .Header-section {
-  background: #1a2930;
-  color: #f7ce3e;
-  border-bottom: solid 1px #f7ce3e;
-  height: 50px;
-  font-size: 30px;
+  background: #1890ff;
+  color: #19324b;
+  border-bottom: solid 1px #19324b;
+  height: 35px;
+  font-size: 20px;
   padding-left: 20px; }
+  .Header-section .ant-btn {
+    border: none;
+    font-weight: 700;
+    background: none;
+    position: absolute;
+    line-height: 0 !important;
+    margin-top: 2px; }
+    .Header-section .ant-btn .anticon.anticon-home,
+    .Header-section .ant-btn .anticon.anticon-form {
+      padding: 0px; }
+    .Header-section .ant-btn:hover, .Header-section .ant-btn:active, .Header-section .ant-btn:focus {
+      border: none;
+      background: none;
+      color: #19324b; }
+  .Header-section .services {
+    margin-left: 100px; }
   .Header-section .search {
     display: inline-block;
     width: 300px;
@@ -20,7 +36,6 @@
   .Header-section h1,
   .Header-section h5 {
     display: inline-block;
-    color: #f7ce3e;
     padding-right: 30px; }
   .Header-section .right-panel {
     display: inline-block;
@@ -142,6 +157,21 @@
     margin: 0; }
   .dashboard-section .user-section h5 {
     font-size: 20px; }
+
+.application-section {
+  margin-top: 25px; }
+  .application-section .ant-tabs-bar {
+    margin: 0; }
+  .application-section .ant-tabs-content {
+    border: 1px solid #1890ff; }
+  .application-section .ant-tabs-nav .ant-tabs-tab-active {
+    background: #1890ff;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+  .application-section .ant-tabs-nav .ant-tabs-tab {
+    padding: 12px 50px;
+    margin: 0; }
 
 /*
   components - custome UI / or usable style

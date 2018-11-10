@@ -5,9 +5,6 @@
   min-height: calc(100vh - 130px);
   padding: 2%; }
 
-body {
-  background: radial-gradient(#40404b, #111118) rgba(34, 34, 40, 0.94); }
-
 .Header-section {
   background: #1a2930;
   color: #f7ce3e;
@@ -68,6 +65,59 @@ body {
   .login-section .ant-input,
   .login-section .ant-radio-group {
     margin-bottom: 30px; }
+
+.dashboard-section .ant-layout {
+  height: 100vh;
+  text-align: center;
+  padding-top: 20px;
+  background: #fff !important; }
+
+.dashboard-section .ant-layout-sider-dark {
+  background: #fff !important;
+  border-right: 1px solid black; }
+
+.dashboard-section .ant-layout-sider {
+  max-width: 500px !important;
+  min-width: 500px !important;
+  width: 500px !important;
+  padding: 20px; }
+  .dashboard-section .ant-layout-sider .ant-btn {
+    font-size: 24px;
+    height: 50px;
+    margin-bottom: 30px !important; }
+
+.dashboard-section .user-section {
+  background: #f7ce3e;
+  height: 300px !important;
+  border-radius: 20px;
+  padding: 20px; }
+  .dashboard-section .user-section .user-details {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 20px; }
+    .dashboard-section .user-section .user-details h3 {
+      margin: 0; }
+  .dashboard-section .user-section .user-address {
+    text-align: left;
+    font-size: 18px; }
+    .dashboard-section .user-section .user-address h3 {
+      margin: 0; }
+  .dashboard-section .user-section .user-info {
+    margin-bottom: 30px; }
+  .dashboard-section .user-section img {
+    float: left;
+    background: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    max-width: 80px;
+    max-height: 80px; }
+  .dashboard-section .user-section h1 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0; }
+  .dashboard-section .user-section h5 {
+    font-size: 20px; }
 
 /*
   components - custome UI / or usable style

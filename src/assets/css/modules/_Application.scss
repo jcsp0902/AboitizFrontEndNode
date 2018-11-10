@@ -27,6 +27,7 @@
             margin-left: 20px;
         }
     }
+
     .repair {
       text-align: center;
       height: 450px;
@@ -92,6 +93,13 @@
               }
         }
     }
+}
+.total {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  font-size: 30px;
 }
 .defaultAddress.address2 {
   max-height: 300px;

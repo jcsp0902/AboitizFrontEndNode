@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 // import { connect } from 'react-redux';
+import Checkbox from 'antd/lib/checkbox';
 import Button from 'antd/lib/button';
 import Icon from 'antd/lib/icon';
 import Input from 'antd/lib/input';
@@ -9,6 +10,7 @@ import notification from 'antd/lib/notification';
 import PackageCard from './component/packageCard';
 import { dataSource, dataSourceAddress } from './dataSource';
 const TabPane = Tabs.TabPane;
+// const CheckboxGroup = Checkbox.Group;
 
 class CreateService extends Component {
  state = {
@@ -16,6 +18,15 @@ class CreateService extends Component {
      package: '',
      createNew: false,
      totalPrice: 0,
+ }
+ onChange = e => {
+    console.log(e.target.checked)
+    if (e.target.checked) {
+        this.setState({totalPrice: this.state.package.packagePrice + 10000})
+    } else {
+        this.setState({totalPrice: 0})
+    }
+   
  }
  toAddress = source => {
      console.log(source)
@@ -186,9 +197,21 @@ class CreateService extends Component {
                     </div>
                     </div>
                     <div className="next-btn">
+                        <div className="spacer" >
+                        <Checkbox
+                            onChange={this.onChange}
+                        > All in </Checkbox>
+                        <em>
+                         (Including the processing and materials)</em>
+                        </div>
                         <Link to={`/customer-dashboard`} >
-                            <Button type="primary" onClick={this.openNotification}>Apply</Button>
+                            <Button type="primary" className="spacer" onClick={this.openNotification}>Apply</Button>
                         </Link>
+                    </div>
+                    <div className="total">
+                    {this.state.totalPrice !== 0 &&
+                    <div className="spacer"> Total: Php {this.state.totalPrice} </div>
+                    }
                     </div>
                 </div>
                 }
@@ -331,10 +354,23 @@ class CreateService extends Component {
                     </div>
                     </div>
                     </div>
+                    
                     <div className="next-btn">
+                        <div className="spacer" >
+                        <Checkbox
+                            onChange={this.onChange}
+                        > All in </Checkbox>
+                        <em>
+                         (Including the processing and materials)</em>
+                        </div>
                         <Link to={`/customer-dashboard`} >
-                            <Button type="primary" onClick={this.openNotification}>Apply</Button>
+                            <Button type="primary" className="spacer" onClick={this.openNotification}>Apply</Button>
                         </Link>
+                    </div>
+                    <div className="total">
+                    {this.state.totalPrice !== 0 &&
+                    <div className="spacer"> Total: Php {this.state.totalPrice} </div>
+                    }
                     </div>
                 </div>
                 }

@@ -232,6 +232,13 @@
           text-align: right;
           font-size: 18px; }
 
+.total {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  font-size: 30px; }
+
 .defaultAddress.address2 {
   max-height: 300px;
   overflow-y: auto; }

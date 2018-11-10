@@ -195,3 +195,40 @@
   color: #1a2930; }
   .customer-card div {
     text-align: right; }
+
+.package-card {
+  overflow: auto;
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #857373;
+  border-radius: 10px;
+  max-width: 300px;
+  min-height: 300px;
+  box-shadow: 2px 2px #B9A7A7; }
+  .package-card .package-header {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
+    .package-card .package-header .pending {
+      border-radius: inherit;
+      background-color: #ff9400;
+      border-bottom: 1px solid #857373;
+      text-align: right;
+      color: #fff; }
+    .package-card .package-header .status {
+      margin-right: 10px;
+      text-align: right;
+      font-size: 18px; }
+
+.package-body {
+  margin: 15px; }
+  .package-body .title {
+    font-weight: bolder; }
+  .package-body .location .title {
+    font-weight: bolder; }
+  .package-body .price .title {
+    font-weight: bolder; }
+  .package-body .service .title {
+    font-weight: bolder; }
+  .package-body .details .items {
+    max-height: 84px;
+    overflow: auto; }

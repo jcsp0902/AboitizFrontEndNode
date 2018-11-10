@@ -1,0 +1,36 @@
+.content-section {
+  min-height: calc(100vh - 130px);
+  padding: 2%;
+}
+body {
+  background: radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
+}
+
+.Header-section {
+  background: #1a2930;
+  color: #f7ce3e;
+  border-bottom: solid 1px #f7ce3e;
+  height: 50px;
+  font-size: 30px;
+  padding-left: 20px;
+  .search {
+    display: inline-block;
+    width: 300px;
+    margin-top: 5px;
+    position: absolute;
+  }
+  h1,
+  h5 {
+      display: inline-block;
+      color: #f7ce3e;
+      padding-right: 30px;
+  }
+  .right-panel {
+    display: inline-block;
+    float: right !important;
+  }
+  .anticon {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+}

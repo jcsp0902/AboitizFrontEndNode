@@ -17,7 +17,9 @@ class Header extends Component {
           <Link to={`/customer-dashboard`} >
             <h5>Jose Carlo San Pedro</h5>
           </Link>
-          <Icon type="notification" />
+          <Link to={`/notification-center`} >
+            <Icon type="notification" />
+          </Link>
           <Icon type="setting" />
         </div>
         {/* Starter Kit

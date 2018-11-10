@@ -86,6 +86,16 @@
     height: 50px;
     margin-bottom: 30px !important; }
 
+.dashboard-section .ant-layout-content {
+  padding: 20px;
+  text-align: left; }
+  .dashboard-section .ant-layout-content h1 {
+    font-size: 28px; }
+  .dashboard-section .ant-layout-content .customer-card {
+    padding: 20px; }
+  .dashboard-section .ant-layout-content span {
+    display: block; }
+
 .dashboard-section .user-section {
   background: #f7ce3e;
   height: 300px !important;
@@ -134,3 +144,7 @@
   justify-content: center;
   z-index: 999;
   color: #F0AD4E; }
+
+.customer-card {
+  background: #c5c1c0;
+  border-radius: 20px; }

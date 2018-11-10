@@ -20,6 +20,21 @@
         margin-bottom: 30px !important;
         }
     }
+    .ant-layout-content {
+        padding: 20px;
+        text-align: left;
+        h1 {
+            font-size: 28px;
+            // float: left;
+        }
+        .customer-card {
+            padding: 20px;
+        }
+        span {
+            // padding: 20px;
+            display: block;
+        }
+    }
     .user-section {
         .user-details {
             text-align: left;

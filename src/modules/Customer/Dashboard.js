@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Layout from 'antd/lib/layout';
 import Button from 'antd/lib/button';
-
+import CustomerCard from '../../components/Content/CustomerCard'
 const { Sider, Content } = Layout;
 
 class Test extends Component {
@@ -32,6 +32,7 @@ class Test extends Component {
           </Sider>
           <Content>
             <h1>Electrician Service Application</h1>
+            <CustomerCard />
           </Content>
         </Layout>
       </Layout>

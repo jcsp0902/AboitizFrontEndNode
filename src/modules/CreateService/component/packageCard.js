@@ -75,7 +75,7 @@ class PackageCard extends Component {
         
         <div className="price">
         <span className="title">
-          Package Price: {' '} 
+          Estimate Price: {' '} 
         </span> 
           Php {dataSource.packagePrice}
         </div>
@@ -91,7 +91,7 @@ class PackageCard extends Component {
           <span className="title">
           Type: {' '}
           </span>
-          {dataSource.type}
+          Service Only
         </div>
         
         <div className="details">

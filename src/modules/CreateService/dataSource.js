@@ -1,20 +1,20 @@
-const dataSource = [
+export const dataSource = [
   {
     packageName: "A",
     packagePrice: 10000,
     service: "Installation",
     type: "All In",
     details:[
-      "2 Lights",
-      "5 Outlet",
-      "4 Wirings",
-      "2 Light walls",
-      "10 Lamps",
+      "1 Lights",
+      "2 Outlet",
+      "3 Wirings",
+      "4 Light walls",
+      "7 Lamps",
     ]
   },
   {
     packageName: "B",
-    packagePrice: 10000,
+    packagePrice: 20000,
     service: "Installation",
     type: "All In",
     details:[
@@ -26,19 +26,27 @@ const dataSource = [
     ]
   },
   {
-    packageName: "Custom",
-    packagePrice: 10000,
+    packageName: "C",
+    packagePrice: 30000,
     service: "Installation",
     type: "All In",
     details:[
-      "2 Lights",
+      "4 Lights",
       "5 Outlet",
-      "4 Wirings",
-      "2 Light walls",
-      "10 Lamps",
+      "6 Wirings",
+      "7 Light walls",
+      "15 Lamps",
     ]
   },
+ 
 ]
 
+export const dataSourceAddress = 
+  {
+    city: "Pulilan",
+    province: "Bulacan",
+    barangay: "Paltao",
+    streetNo: "0239 P. Sayo St.",
+    zipCode: "3005",
+  }
 
-export default dataSource;

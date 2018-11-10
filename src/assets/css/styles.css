@@ -1,0 +1,86 @@
+/*
+ Partials
+*/
+.content-section {
+  min-height: calc(100vh - 130px);
+  padding: 2%; }
+
+body {
+  background: radial-gradient(#40404b, #111118) rgba(34, 34, 40, 0.94); }
+
+.Header-section {
+  background: #1a2930;
+  color: #f7ce3e;
+  border-bottom: solid 1px #f7ce3e;
+  height: 50px;
+  font-size: 30px;
+  padding-left: 20px; }
+  .Header-section .search {
+    display: inline-block;
+    width: 300px;
+    margin-top: 5px;
+    position: absolute; }
+  .Header-section h1,
+  .Header-section h5 {
+    display: inline-block;
+    color: #f7ce3e;
+    padding-right: 30px; }
+  .Header-section .right-panel {
+    display: inline-block;
+    float: right !important; }
+  .Header-section .anticon {
+    padding-right: 20px;
+    cursor: pointer; }
+
+/*
+  Modules - pages, parnent element
+*/
+.Home-section {
+  color: #F0AD4E; }
+
+.login-section {
+  text-align: center; }
+  .login-section h1 {
+    margin: 0;
+    padding: 10px;
+    background: #f7ce3e;
+    font-size: 40px;
+    border-radius: 10px 10px 0px 0px; }
+  .login-section .form-section {
+    background-color: #fff;
+    width: 400px;
+    height: auto;
+    box-shadow: 0 0 40px 4px #111118;
+    border-radius: 10px;
+    margin: 0 auto; }
+    .login-section .form-section .login {
+      padding: 45px 40px; }
+    .login-section .form-section .email-login,
+    .login-section .form-section .password-login {
+      margin-bottom: 30px; }
+    .login-section .form-section .ant-btn {
+      font-size: 25px;
+      height: 40px;
+      width: 175px; }
+  .login-section .signup {
+    padding: 45px 40px; }
+  .login-section .ant-btn,
+  .login-section .ant-input,
+  .login-section .ant-radio-group {
+    margin-bottom: 30px; }
+
+/*
+  components - custome UI / or usable style
+*/
+.FullWidthLoading-section {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  color: #F0AD4E; }

@@ -1,18 +1,43 @@
 .content-section {
   min-height: calc(100vh - 130px);
-  padding: 2%;
-}
-body {
-  background: radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
+  padding: 20px 5%;
 }
 
 .Header-section {
-  background: #1a2930;
-  color: #f7ce3e;
-  border-bottom: solid 1px #f7ce3e;
-  height: 50px;
-  font-size: 30px;
+  background: #1890ff;
+  color: #19324b;
+  border-bottom: solid 1px #19324b;
+  height: 35px;
+  font-size: 20px;
+  .anticon-notification {
+    color: black;
+  }
+  .apply-button {
+    padding-left: 100px;
+  }
   padding-left: 20px;
+  .ant-btn {
+    .anticon.anticon-home,
+    .anticon.anticon-form {
+      padding: 0px;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+    border: none;
+    background: none;
+    color: #19324b;
+    }
+    border: none;
+    font-weight: 700;
+    background: none;
+    position: absolute;
+    line-height: 0 !important;
+    margin-top: 2px;
+  }
+  .services {
+    margin-left: 100px;
+  }
   .search {
     display: inline-block;
     width: 300px;
@@ -22,7 +47,7 @@ body {
   h1,
   h5 {
       display: inline-block;
-      color: #f7ce3e;
+      // color: #f7ce3e;
       padding-right: 30px;
   }
   .right-panel {
